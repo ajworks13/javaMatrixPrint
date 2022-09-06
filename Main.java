@@ -2,18 +2,46 @@ import java.util.Random;
 import java.lang.Thread;
 
 class Main {
+
+	//global
+	public static void heart(){
+		System.out.print("\n\n               I               \n");
+
+		System.out.print("      _____       _____        \n");
+		System.out.print("     /     \\     /      \\       \n");
+		System.out.print("    /       \\   /        \\      \n");
+		System.out.print("   /          V           \\     \n");
+		System.out.print("  (                        )    \n");
+		System.out.print("  \\                       /     \n");
+		System.out.print("   \\                     /      \n");
+		System.out.print("    \\                   /       \n");
+		System.out.print("     \\                 /        \n");
+		System.out.print("      \\               /         \n");
+		System.out.print("       \\            /           \n");
+		System.out.print("         \\        /             \n");
+		System.out.print("           \\    /               \n");
+		System.out.print("             \\/                 \n");
+		System.out.print("      ______ JODY  ______        \n");
+		System.out.print("      ______       ______        \n");
+
+
+	}
+	
 	public static void main(String[] args) throws InterruptedException {
 		Random rand = new Random();
 		String[] matrixPrint = { "A", "B", "C", "D", "E", "1", "2", "3", "4",
 				"5", "6", "7", "8", "9", "!", "@", "#", "$",
 				"%", "^", "&" };
 
+		heart();
+		
 		do {
 			
 			int randomNumber = rand.nextInt(21);
 			int randomSentenceBreak = rand.nextInt(50);
-			int lineBreaker = rand.nextInt(200);
+			int lineBreaker = rand.nextInt(800);
 			Thread.sleep(50);
+
 			
 			if(randomSentenceBreak == 15){
 				System.out.println("");
@@ -22,7 +50,16 @@ class Main {
 			if(lineBreaker == 100){
 				System.out.println("");
 				System.out.println("");
-			}
+			}else if(lineBreaker == 17){
+				System.out.println();
+				System.out.println("I like Tuna sandwiches. <3");
+				System.out.println();
+			}else if(lineBreaker == 1){
+				heart();
+				System.out.println("You are my Number 1 Jody <3");
+			}/*else if(lineBreaker > 799){
+				Thread.sleep(150);
+			} */
 
 			switch (randomNumber) {
 				case 0:
