@@ -24,6 +24,7 @@ class Main {
 		System.out.print("      ______ JODY  ______        \n");
 		System.out.print("      ______       ______        \n");
 
+	
 
 	}
 	
@@ -32,6 +33,9 @@ class Main {
 		String[] matrixPrint = { "A", "B", "C", "D", "E", "1", "2", "3", "4",
 				"5", "6", "7", "8", "9", "!", "@", "#", "$",
 				"%", "^", "&" };
+		
+		String line1 = "     _____      _____     ";
+
 
 		heart();
 		
@@ -41,6 +45,8 @@ class Main {
 			int randomSentenceBreak = rand.nextInt(50);
 			int lineBreaker = rand.nextInt(800);
 			Thread.sleep(50);
+
+			// make another switch to make a heart.
 
 			
 			if(randomSentenceBreak == 15){
